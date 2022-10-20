@@ -10,7 +10,7 @@ script.Parent.Touched:Connect(function(part)
     -- make sure it's a humanoid
     local h = part.Parent:FindFirstChild("Humanoid")
     if not h then
-        return
+        h.WalkSpeed = 16 * 6
     end
 
     -- change to five times faster than default speed
